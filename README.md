@@ -2,11 +2,11 @@ Getting and Cleaning Data - Course project
 
 This R Project ist
 
-[desc](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 'Full description of the project: Human Activity Recognition Using Smartphones') 
+[Full description of the project: Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 'Full description of the project: Human Activity Recognition Using Smartphones') 
 
 Here are the data for the project: 
 
-[data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 'Data') 
+[Data of the project](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 'Data') 
 
 The R Script run_analysis.R follows the predefined steps: 
 
