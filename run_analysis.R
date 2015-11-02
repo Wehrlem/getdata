@@ -32,25 +32,3 @@ tidydata$Activity<-sapply(tidydata$Activity, function(x) { all.a[,2][x] })
 head(tidydata)
 # Write the textfile
 write.table(tidydata, "tidy.txt", row.names = FALSE)
-
-all.x <- all.x[,cols.m.s]
-
-#Define the names
-names(all.x)<-all.f[,2][cols.m.s]
-names(all.y) <- 'Activity'
-names(all.s) <- 'Subject'
-
-# Combine everthing together
-all <- cbind(all.s,all.y, all.x)
-
-# Aggregate by mean
-data <- aggregate( all, by=list(Subject=all$Subject, Activity=all$Activity), FUN= "mean" )
-
-# Remove cols 3 and 4 
-tidydata <- subset(data, select = -c(3,4) ) 
-
-# Add labels to activity
-tidydata$Activity<-sapply(tidydata$Activity, function(x) { all.a[,2][x] })
-
-# Write the textfile
-write.table(tidydata, "tidy.txt", row.names = FALSE)
